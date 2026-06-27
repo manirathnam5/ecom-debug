@@ -42,5 +42,4 @@ public class ProductController {
         return new ResponseEntity<>(createdProduct,
                 HttpStatus.CREATED);
     }
-
 }
