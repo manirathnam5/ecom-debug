@@ -36,7 +36,7 @@ public class ProductController {
     @PostMapping("/addProduct")
     public ResponseEntity<Product> addProduct
             (@Valid @RequestBody Product product) throws InterruptedException {
-        //print
+
         Product createdProduct =
                 productService.addProduct(product);
         return new ResponseEntity<>(createdProduct,
